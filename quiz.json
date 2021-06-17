@@ -1,334 +1,640 @@
 [
-    {
-      "id": 677,
-      "question": "What is the default working directory of the Linux administrator user?",
-      "description": null,
-      "answers": {
-        "answer_a": "/root",
-        "answer_b": "Doesn't have one",
-        "answer_c": "/usr/admin",
-        "answer_d": "/administrator",
-        "answer_e": "/admin",
-        "answer_f": "/home/root"
-      },
-      "multiple_correct_answers": "true",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "true",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": null,
-      "explanation": "The default working directory is always /root. This directory is kept only for the root user and no other.",
-      "tip": null,
-      "tags": [
+  {
+     "id":300,
+     "question":"What is the difference between character 23 and x23?",
+     "description":null,
+     "answers":{
+        "answer_a":"23 specifies the octal 23 and x23 determine the hex 23.",
+        "answer_b":"23 specifies the hex 23 and x23 determine the octal 23",
+        "answer_c":null,
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
-        },
-        {
-          "name": "Linux"
+           "name":"BASH"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 654,
-      "question": "Which option can be used with ‘rm’ command to prompt for file removal?",
-      "description": null,
-      "answers": {
-        "answer_a": "-ask",
-        "answer_b": "-i",
-        "answer_c": "-c",
-        "answer_d": "-n",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "false",
-        "answer_b_correct": "true",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": "answer_a",
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"CMS",
+     "difficulty":"Easy"
+  },
+  {
+     "id":375,
+     "question":"Once a table has been created in MySQL, its structure cannot be altered",
+     "description":null,
+     "answers":{
+        "answer_a":"True",
+        "answer_b":"False",
+        "answer_c":null,
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
+           "name":"MySQL"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 658,
-      "question": "Which command can introduce clock delay?",
-      "description": null,
-      "answers": {
-        "answer_a": "sleep",
-        "answer_b": "wait",
-        "answer_c": "suspend",
-        "answer_d": "delay",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": "answer_a",
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"SQL",
+     "difficulty":"Easy"
+  },
+  {
+     "id":654,
+     "question":"Which option can be used with \u2018rm\u2019 command to prompt for file removal?",
+     "description":null,
+     "answers":{
+        "answer_a":"-ask",
+        "answer_b":"-i",
+        "answer_c":"-c",
+        "answer_d":"-n",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
+           "name":"BASH"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 690,
-      "question": "How can we list out all currently executing background processes?",
-      "description": null,
-      "answers": {
-        "answer_a": "ps -e",
-        "answer_b": "top",
-        "answer_c": "ps faux",
-        "answer_d": "proccess -aux",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": null,
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":15,
+     "question":"Which command to use for complete details of a command on the shell?",
+     "description":null,
+     "answers":{
+        "answer_a":"help",
+        "answer_b":"man",
+        "answer_c":"?",
+        "answer_d":"info",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_b",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
-        },
-        {
-          "name": "Linux"
+           "name":"Linux"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 668,
-      "question": "What will the following command do - $ chmod 888 file",
-      "description": null,
-      "answers": {
-        "answer_a": "It enables r,w,x premissions for all users",
-        "answer_b": "It disables r,w,x premissions for all users",
-        "answer_c": "It enables r,w,x permissions only for owner of the file",
-        "answer_d": "None of the above.",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "false",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "true",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": "answer_a",
-      "explanation": "We can provide the permission values in octal number system and 888 is not a valid octal number.",
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":1,
+     "question":"How to delete a directory in Linux?",
+     "description":"The rmdir commands deletes only empty directories. To delete a folder recursively use the rm -rf command.",
+     "answers":{
+        "answer_a":"ls",
+        "answer_b":"delete",
+        "answer_c":"remove",
+        "answer_d":"rmdir",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_d",
+     "explanation":"rmdir deletes an empty directory",
+     "tip":null,
+     "tags":[
+        
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":619,
+     "question":"How can we access the data sent through the URL with the POST method?",
+     "description":null,
+     "answers":{
+        "answer_a":"$_POST[\"var\"];",
+        "answer_b":"$_REQUEST[\"var\"];",
+        "answer_c":"$_GET[\"var\"];",
+        "answer_d":"$_PUT[\"var\"];",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
+           "name":"PHP"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 823,
-      "question": "BASH stands for:",
-      "description": null,
-      "answers": {
-        "answer_a": "Bourne Again SHell",
-        "answer_b": "BAsic SHell",
-        "answer_c": "Basic Async SHell",
-        "answer_d": null,
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": null,
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Code",
+     "difficulty":"Easy"
+  },
+  {
+     "id":853,
+     "question":"How to stop a docker container immediately?",
+     "description":null,
+     "answers":{
+        "answer_a":"$ docker terminate",
+        "answer_b":"$ docker kill",
+        "answer_c":"$ docker stop",
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
+           "name":"Docker"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 711,
-      "question": "Are arrays supported in shell scripts?",
-      "description": null,
-      "answers": {
-        "answer_a": "True",
-        "answer_b": "False",
-        "answer_c": "Yes but only under certain conditions",
-        "answer_d": null,
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": null,
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Docker",
+     "difficulty":"Easy"
+  },
+  {
+     "id":755,
+     "question":"Which of the following is correct about PHP?",
+     "description":null,
+     "answers":{
+        "answer_a":"PHP is a recursive acronym for \"PHP: Hypertext Preprocessor\".",
+        "answer_b":"PHP is a server side scripting language that is embedded in HTML.",
+        "answer_c":"It is used to manage dynamic content, databases, session tracking, even build entire e-commerce sites.",
+        "answer_d":"All of the mentioned.",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
-        },
-        {
-          "name": "Linux"
+           "name":"PHP"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 18,
-      "question": "Which is the best tool to use for logging in remotely?",
-      "description": null,
-      "answers": {
-        "answer_a": "rsh",
-        "answer_b": "ssh",
-        "answer_c": "telnet",
-        "answer_d": "login",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "false",
-        "answer_b_correct": "true",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": "answer_b",
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Code",
+     "difficulty":"Easy"
+  },
+  {
+     "id":537,
+     "question":"Which tag creates a check box for a form in HTML?",
+     "description":null,
+     "answers":{
+        "answer_a":"<checkbox>",
+        "answer_b":"<input checkbox>",
+        "answer_c":"<input=checkbox>",
+        "answer_d":"<input type=\"checkbox\">",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "Linux"
+           "name":"HTML"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 46,
-      "question": "Which of the following answers refers to a software tool used for searching and installing software packages on Debian and Debian-based Linux distributions?",
-      "description": null,
-      "answers": {
-        "answer_a": "rpm",
-        "answer_b": "apt-rpm",
-        "answer_c": "yum",
-        "answer_d": "apt-get",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "false",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "true",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": "answer_d",
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"Code",
+     "difficulty":"Easy"
+  },
+  {
+     "id":1005,
+     "question":"Which of the following are Kubernetes installation tools? Select all answers that apply.",
+     "description":null,
+     "answers":{
+        "answer_a":"kops",
+        "answer_b":"kubeadm",
+        "answer_c":"kubespray (formerly known as kargo)",
+        "answer_d":"None of the mentioned",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"true",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"true",
+        "answer_c_correct":"true",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "Linux"
+           "name":"Kubernetes"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    },
-    {
-      "id": 695,
-      "question": "Which command can be used to change file access permission bits?",
-      "description": null,
-      "answers": {
-        "answer_a": "chmod",
-        "answer_b": "chown",
-        "answer_c": "umask",
-        "answer_d": "chperm",
-        "answer_e": null,
-        "answer_f": null
-      },
-      "multiple_correct_answers": "false",
-      "correct_answers": {
-        "answer_a_correct": "true",
-        "answer_b_correct": "false",
-        "answer_c_correct": "false",
-        "answer_d_correct": "false",
-        "answer_e_correct": "false",
-        "answer_f_correct": "false"
-      },
-      "correct_answer": null,
-      "explanation": null,
-      "tip": null,
-      "tags": [
+     ],
+     "category":"DevOps",
+     "difficulty":"Easy"
+  },
+  {
+     "id":946,
+     "question":"Which command will you use to update a Kubernetes deployment?",
+     "description":null,
+     "answers":{
+        "answer_a":"kubectl setimage deployment\/Deployment tomcat = tomcat:6.0",
+        "answer_b":"kubectl --setimage deployment\/Deployment tomcat = tomcat:6.0",
+        "answer_c":"kubectl setimage deploy\/Deployment tomcat = tomcat:6.0",
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
         {
-          "name": "BASH"
-        },
-        {
-          "name": "Linux"
+           "name":"Kubernetes"
         }
-      ],
-      "category": "Linux",
-      "difficulty": "Easy"
-    }
-  ]
+     ],
+     "category":"Docker",
+     "difficulty":"Easy"
+  },
+  {
+     "id":81,
+     "question":"The if statement is used to execute some code only if a specified condition is true",
+     "description":null,
+     "answers":{
+        "answer_a":"True",
+        "answer_b":"False",
+        "answer_c":null,
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"PHP"
+        }
+     ],
+     "category":"",
+     "difficulty":"Easy"
+  },
+  {
+     "id":891,
+     "question":"Is it possible to build environment-agnostic systems with Docker?",
+     "description":null,
+     "answers":{
+        "answer_a":"True",
+        "answer_b":"False",
+        "answer_c":null,
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"true",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"Docker"
+        }
+     ],
+     "category":"Docker",
+     "difficulty":"Easy"
+  },
+  {
+     "id":46,
+     "question":"Which of the following answers refers to a software tool used for searching and installing software packages on Debian and Debian-based Linux distributions?",
+     "description":null,
+     "answers":{
+        "answer_a":"rpm",
+        "answer_b":"apt-rpm",
+        "answer_c":"yum",
+        "answer_d":"apt-get",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_d",
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"Linux"
+        }
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":565,
+     "question":"Which of the following variables is not a predefined variable?",
+     "description":null,
+     "answers":{
+        "answer_a":"$get",
+        "answer_b":".$post",
+        "answer_c":"$request",
+        "answer_d":"$ask",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"PHP"
+        }
+     ],
+     "category":"Code",
+     "difficulty":"Easy"
+  },
+  {
+     "id":899,
+     "question":"Kubernetes uses _____________ to connect to ouath 2 providers to offload the authentication to external services.",
+     "description":null,
+     "answers":{
+        "answer_a":"Webhook Token Authentication",
+        "answer_b":"Keystone Password",
+        "answer_c":"OpenID Connect Tokens",
+        "answer_d":"Authentication Proxy",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"true",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"Kubernetes"
+        }
+     ],
+     "category":"DevOps",
+     "difficulty":"Easy"
+  },
+  {
+     "id":875,
+     "question":"If the Plesk server can't run Docker locally, you can still connect to a remote Docker server to manage containers. You'll need:",
+     "description":null,
+     "answers":{
+        "answer_a":"A virtuozzo 6 container",
+        "answer_b":"One separate ready-to-code environment",
+        "answer_c":"A Windows Server",
+        "answer_d":"The Plesk Docker extension",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":null,
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"Docker"
+        }
+     ],
+     "category":"Docker",
+     "difficulty":"Easy"
+  },
+  {
+     "id":730,
+     "question":"How to list PersistentVolumes sorted by capacity in Kubernetes?",
+     "description":null,
+     "answers":{
+        "answer_a":"kubectl get pv --sort-by=.spec.capacity.volume",
+        "answer_b":"kubectl get pv --sort-by=.spec.capacity.storage",
+        "answer_c":"kubectl get pv --sort-by=.spec.capacity.memory",
+        "answer_d":"kubectl get pv --sort-by=.spec.capacity.space",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"Kubernetes"
+        }
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":719,
+     "question":"The kube-apiserver on Kubernetes master is designed to scale:",
+     "description":null,
+     "answers":{
+        "answer_a":"Vertically",
+        "answer_b":"Horizontally",
+        "answer_c":"kube-apiserver is not used for scaling",
+        "answer_d":null,
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"true",
+        "answer_c_correct":"false",
+        "answer_d_correct":"false",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":"The Kubernetes API server validates and configures data for the api objects which include pods, services, replicationcontrollers, and others. The API Server services REST operations and provides the frontend to the cluster\u2019s shared state through which all other components interact.",
+     "tip":null,
+     "tags":[
+        {
+           "name":"Kubernetes"
+        }
+     ],
+     "category":"Linux",
+     "difficulty":"Easy"
+  },
+  {
+     "id":1046,
+     "question":"Which command will you use to test the connectivity to the host from the master server and make sure that it actually works?",
+     "description":null,
+     "answers":{
+        "answer_a":"ansible your_host_name_here -m pong",
+        "answer_b":"ansible your_host_name_here -m connect",
+        "answer_c":"ansible your_host_name_here -m try",
+        "answer_d":"ansible your_host_name_here -m ping",
+        "answer_e":null,
+        "answer_f":null
+     },
+     "multiple_correct_answers":"false",
+     "correct_answers":{
+        "answer_a_correct":"false",
+        "answer_b_correct":"false",
+        "answer_c_correct":"false",
+        "answer_d_correct":"true",
+        "answer_e_correct":"false",
+        "answer_f_correct":"false"
+     },
+     "correct_answer":"answer_a",
+     "explanation":null,
+     "tip":null,
+     "tags":[
+        {
+           "name":"DevOps"
+        }
+     ],
+     "category":"DevOps",
+     "difficulty":"Easy"
+  }
+]
