@@ -1,17 +1,18 @@
-class QuestionController < ApplicationController  
+class QuizController < ApplicationController
   def home
   end
 
-  def quiz
+  def create
     @@user_score = 0;
     @@randomQuestionsArray = [];
     # @@numberQuestions = rand(4..10);
     @@numberQuestions = 2;
     i = 0;
-    while i < @@numberQuestions do
+    while i <= @@numberQuestions do
       randNumber = rand(1..Question.count);
       question = Question.find(randNumber)
-      unless @@randomQuestionsArray.include?(question)
+      if @@randomQuestionsArray.include?(question)
+      else 
         @@randomQuestionsArray << question;
         i += 1;
       end
@@ -22,14 +23,13 @@ class QuestionController < ApplicationController
       # end
       # @randomQuestionsArray.push(question);
     end
-
     redirect_to question_path(id:1);
   end
   
   def question
     @letters = ['a','b','c','d','e','f'];
     @@currentQNo = params[:id].to_i;
-    currentQuestion = @@randomQuestionsArray[@@currentQNo]
+    currentQuestion = @@randomQuestionsArray[@@currentQNo-1]
     # currentQuestion = @@randomQuestionsArray[params[:id].to_i];
     @questionName = currentQuestion['question']['question'];
     answersArray = currentQuestion['question']['answers'];
@@ -45,18 +45,20 @@ class QuestionController < ApplicationController
 
   def submit
 
-    # @@user_score += 1 unless params[:answer] != ''
-    # @@user_score if checkanswer()
-    checkanswer()
-    puts @@user_score
-    @@nextQuestion = @@currentQNo + 1;
-    puts @@nextQuestion;
-    puts @@numberQuestions;
-
-    if @@nextQuestion < @@numberQuestions
-      redirect_to question_path(id:@@nextQuestion);
+    if !params[:answer]
+      puts 'no params'
+      redirect_to question_path(id:@@currentQNo);
     else
-      redirect_to '/quiz/result';
+      checkanswer()
+      @@nextQuestion = @@currentQNo + 1;
+      puts @@currentQNo;
+      puts @@nextQuestion;
+      puts @@numberQuestions;
+      if (@@nextQuestion <= @@numberQuestions)
+        redirect_to question_path(id:@@nextQuestion);
+      else
+        redirect_to '/quiz/result';
+      end
     end
   end
 
@@ -81,10 +83,16 @@ class QuestionController < ApplicationController
     if @correct_answers[params[:answer].to_i] == "true" 
       @@user_score += 1;
     end
-
-
-
   end
+
+  def result
+    @final_score = @@user_score;
+    @numberQuestions = @@numberQuestions;
+    puts @final_score;
+    puts @@nextQuestion;
+    puts @numberQuestions;
+  end
+
 
 
 end

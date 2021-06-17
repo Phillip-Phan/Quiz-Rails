@@ -1,0 +1,36 @@
+<div class="quiz_container">
+    <div class="quiz">
+        <div class="questionName">
+        <%= @questionName %>
+        </div>
+
+        <div class="choices">
+            <%= form_with url: "/question/submit", method: :post do |form| %>
+            <% index = 0%>
+            <% @answers.each do |answer| %>
+                <% if answer != nil %>
+                <!--
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="<%=answer%>">
+                    <label class="form-check-label" for="<%=answer%>" value="<%=answer%>">
+                        <%= answer%>
+                    </label>
+                    </div>
+                -->
+                    <%= form.radio_button :answer, index%>
+                    <%= form.label :answer, answer%>
+                    <br>
+                    <% end %>
+            <% index += 1%>    
+            <% end %>
+                
+            <div class="submit">
+                <%= form.submit "submit", :class => "btn btn-primary submit" %>
+            </div>
+
+        </div>
+            <%# <button class="btn btn-primary" type="submit">submit</button> %>
+        <% end %>
+
+    </div>
+</div>        

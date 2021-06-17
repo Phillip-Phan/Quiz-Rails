@@ -52,3 +52,69 @@ footer {
     text-align: center;
     background-color: gray;
 }
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: 90%;
+}
+
+.quiz_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90%;
+    // background-color: black;
+}
+
+.quiz {
+    // background-color: rgb(211, 211, 211);
+    // border-radius: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    height: 50%;
+    gap: 20px;
+    padding: 5px;
+
+}
+
+.choices {
+    width: 80%;
+    align-items: flex-start;
+    // height: 72%;
+}
+
+.submit {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.questionName {
+    // background-color: red;
+    display: flex;
+    text-align: center;
+    min-height: 50px;
+    width: 80%;
+    // vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+    // border: 1px solid black;
+}
+
+.container h1 {
+    text-align: center;
+}
+
+
+.button {
+    display:flex;
+    justify-content: center;
+}
