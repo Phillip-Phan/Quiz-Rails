@@ -5,7 +5,7 @@ Rails.application.routes.draw do
   # get 'question/quiz', to:'question#quiz'
   # get 'question/:id', to: 'question#question', as:"question"
   get 'question/result', to: 'quiz#result'
-  get 'quiz/create', to: 'quiz#create'
+  post 'quiz/create', to: 'quiz#create'
   get 'quiz/question', to:'quiz#question'
   get 'quiz/question/:id', to: 'quiz#question', as:"question"
   post 'question/submit', to: 'quiz#submit'

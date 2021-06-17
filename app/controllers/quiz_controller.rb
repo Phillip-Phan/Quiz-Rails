@@ -5,7 +5,7 @@ class QuizController < ApplicationController
   def create
     @@user_score = 0;
     @@randomQuestionsArray = [];
-    @@numberQuestions = rand(4..10);
+    @@numberQuestions = params[:numquestions].to_i;
     i = 0;
     while i <= @@numberQuestions do
       randNumber = rand(1..Question.count);

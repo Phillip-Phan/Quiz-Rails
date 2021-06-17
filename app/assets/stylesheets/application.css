@@ -40,8 +40,17 @@ header {
     width: 100%;
     left: 0;
     top: 0; */
-    background-color: gray;
+    background-color: rgb(212, 212, 212);
     text-align: center;
+}
+
+header .text {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: row;
+    padding-left: 10px;
+    padding-right: 10px;
+    gap: 30px;
 }
 
 footer {
@@ -50,7 +59,14 @@ footer {
     bottom: 0;
     width: 100%;
     text-align: center;
-    background-color: gray;
+    background-color: rgb(212, 212, 212);
+}
+
+.socials {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .container {
@@ -68,12 +84,9 @@ footer {
     align-items: center;
     width: 100%;
     height: 90%;
-    // background-color: black;
 }
 
 .quiz {
-    // background-color: rgb(211, 211, 211);
-    // border-radius: 3%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -84,10 +97,17 @@ footer {
 
 }
 
+.rangeSelect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    width: 50%;
+}
+
 .choices {
-    width: 80%;
+    width: 90%;
     align-items: flex-start;
-    // height: 72%;
 }
 
 .submit {
@@ -98,15 +118,12 @@ footer {
 }
 
 .questionName {
-    // background-color: red;
     display: flex;
     text-align: center;
     min-height: 50px;
     width: 80%;
-    // vertical-align: middle;
     align-items: center;
     justify-content: center;
-    // border: 1px solid black;
 }
 
 .container h1 {

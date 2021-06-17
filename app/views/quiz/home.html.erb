@@ -1,7 +1,11 @@
 
 <div class="container">
 <h1>Ready to start the Quiz?</h1>
-    <div class="button">
-        <a class="btn btn-primary" href="/quiz/create" role="button">Start Quiz</a>
+    <%= form_with url: "/quiz/create", method: :post do |form| %>
+    <div class="rangeSelect">
+        <%= range_field_tag :numquestions, 4, min: 4, max: 8, step: 1 %>
+        <br>
+        <%= form.submit "submit", :class => "btn btn-primary submit" %>
     </div>
+    <% end %>
 </div>
