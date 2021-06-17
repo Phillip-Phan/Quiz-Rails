@@ -45,14 +45,10 @@ class QuizController < ApplicationController
   def submit
 
     if !params[:answer]
-      puts 'no params'
       redirect_to question_path(id:@@currentQNo);
     else
       checkanswer()
       @@nextQuestion = @@currentQNo + 1;
-      puts @@currentQNo;
-      puts @@nextQuestion;
-      puts @@numberQuestions;
       if (@@nextQuestion <= @@numberQuestions)
         redirect_to question_path(id:@@nextQuestion);
       else
@@ -87,9 +83,6 @@ class QuizController < ApplicationController
   def result
     @final_score = @@user_score;
     @numberQuestions = @@numberQuestions;
-    puts @final_score;
-    puts @@nextQuestion;
-    puts @numberQuestions;
   end
 
 

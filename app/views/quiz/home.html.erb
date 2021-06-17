@@ -4,6 +4,7 @@
     <%= form_with url: "/quiz/create", :class=> "formbox", method: :post do |form| %>
     <div class="rangeSelect">
         <%= range_field_tag :numquestions, 4, min: 4, max: 8, step: 1, :class=> "range" %>
+        select 4-8 questions
         <br>
         <%= form.submit "submit", :class => "btn btn-primary submit" %>
     </div>
