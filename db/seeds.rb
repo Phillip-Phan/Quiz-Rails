@@ -5,3 +5,13 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+file = open("quiz.json")
+json = file.read
+parsedJSON = JSON.parse(json)
+
+parsedJSON.each do |question|
+    Question.create(question:question)
+end
+
+puts "success"
