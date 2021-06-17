@@ -1,9 +1,9 @@
 
 <div class="container">
 <h1>Ready to start the Quiz?</h1>
-    <%= form_with url: "/quiz/create", method: :post do |form| %>
+    <%= form_with url: "/quiz/create", :class=> "formbox", method: :post do |form| %>
     <div class="rangeSelect">
-        <%= range_field_tag :numquestions, 4, min: 4, max: 8, step: 1 %>
+        <%= range_field_tag :numquestions, 4, min: 4, max: 8, step: 1, :class=> "range" %>
         <br>
         <%= form.submit "submit", :class => "btn btn-primary submit" %>
     </div>
