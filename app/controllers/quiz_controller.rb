@@ -5,12 +5,11 @@ class QuizController < ApplicationController
   def create
     @@user_score = 0;
     @@randomQuestionsArray = [];
-    # @@numberQuestions = rand(4..10);
-    @@numberQuestions = 2;
+    @@numberQuestions = rand(4..10);
     i = 0;
     while i <= @@numberQuestions do
       randNumber = rand(1..Question.count);
-      question = Question.find(randNumber)
+      question = Question.find(randNumber);
       if @@randomQuestionsArray.include?(question)
       else 
         @@randomQuestionsArray << question;
