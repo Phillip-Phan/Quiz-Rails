@@ -1,0 +1,25 @@
+<div class="quiz_container">
+
+    <div class="quiz">
+        <div class="questionName">
+        <%= @questionName %>
+        </div>
+
+        <div class="choices">
+            <% @answers.each do |answer| %>
+                <% if answer != nil %>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="flexRadioDefault" id="<%=answer%>">
+                    <label class="form-check-label" for="<%=answer%>">
+                        <%= answer%>
+                    </label>
+                    </div>
+                <% end %>
+            <% end %>
+        </div>
+
+        <div class="submit">
+            <button class="btn btn-primary" type="submit">submit</button>
+        </div>
+    </div>
+</div>        
